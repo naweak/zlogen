@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Генератор зла</title>
@@ -9,6 +9,7 @@
 	</style>
 </head>
 <body>
+	<small>Количество символов: <span>0</span></small>
 	<textarea name="zlo" id="zlo" style="width:100%; height:500px;"></textarea>
 	Мощность: <input type="text" name="power" id="power" value="20" /> Со ссылками 
 	<select name="" id="with_links">
@@ -31,8 +32,12 @@
 				},
 				success:function(data) {
 					$('textarea#zlo').val(data);
+					$('small>span').html($('textarea#zlo').val().length);
 				}
 			});
+		});
+		$('textarea#zlo').keyup(function () {
+			$('small>span').html($('textarea#zlo').val().length);
 		});
 	</script>
 </body>
