@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Генератор зла</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+	<style>
+		.cbalink{display: none;}
+	</style>
 </head>
 <body>
 	<textarea name="zlo" id="zlo" style="width:100%; height:500px;"></textarea>
@@ -13,6 +16,10 @@
 		<option value="1">Да</option>
 	</select>
 	<span class="gsom" style="background:gray;cursor:pointer;">ПЫЩЬ!</span>
+	<p>
+		<!-- оставь эту ссылку -->
+		<a href="https://github.com/naweak/zlogen">Сорс генератора</a>
+	</p>
 	<script>
 		$('span.gsom').click(function() {
 			$.ajax({
