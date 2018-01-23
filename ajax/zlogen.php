@@ -1,5 +1,5 @@
 <?php
-	public function zlogen() {
+	function zlogen() {
 		$phrases = [
 			'ЖЫВТОНЕЧОЧОУПЯЧКА1111111',
 			'ОЯЕБУ!!!!!!11!!адинадин',
@@ -57,7 +57,7 @@
 			echo "АЛЯРМА!!11";
 		}
 	}
-	public function zlogen_with_links() {
+	function zlogen_with_links() {
 		$phrases = [
 			'ЖЫВТОНЕЧОЧОУПЯЧКА1111111',
 			'ОЯЕБУ!!!!!!11!!адинадин',
@@ -119,7 +119,6 @@
 		} else {
 			echo "АЛЯРМА!!111";
 		}
-
 	}
 	if($_GET['with_links'] == 1) {
 		zlogen_with_links();
